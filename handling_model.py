@@ -1,12 +1,12 @@
 import tensorflow as tf
-from tensorflow.keras.layers import (Input, Conv2D, BatchNormalization,
+from tensorflow.keras.layers import (Input, Conv2D, BatchNormalization, # type: ignore
                                      LeakyReLU, MaxPooling2D, Dropout, 
                                      UpSampling2D, Concatenate, GlobalAveragePooling2D,
                                      Dense, Flatten)
-from tensorflow.keras.regularizers import l2
-from tensorflow.keras.models import Model
-from tensorflow.keras.optimizers import RMSprop
-from tensorflow.keras.callbacks import EarlyStopping
+from tensorflow.keras.regularizers import l2 # type: ignore
+from tensorflow.keras.models import Model # type: ignore
+from tensorflow.keras.optimizers import RMSprop # type: ignore
+from tensorflow.keras.callbacks import EarlyStopping # type: ignore
 
 
 class ClassificationModel:
